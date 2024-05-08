@@ -1,0 +1,749 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.container {
+    width: 100%;
+    height: 78px;
+    border-top: 5px solid #51ceedf9;
+    border-bottom: 5px solid #51ceedf9;
+    display: flex;
+    position: fixed;
+    left: 0px;
+    z-index: 2;
+    background-color: white;
+
+}
+
+#logo {
+    border-radius: 37% 63% 34% 66% / 100% 0% 100% 0%;
+    width: 12%;
+    height: 69px;
+    background-color: #51ceedf9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 85px;
+}
+
+h2 {
+    color: white;
+}
+
+#logo a {
+    text-decoration: none;
+}
+
+#mainlist {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 107px;
+    list-style: none;
+    color: black;
+    width: 30%;
+    height: 71px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#mainlist a {
+    width: 100%;
+    height: 71px;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+#mainlist .mli {
+    list-style: none;
+    font-size: 13px;
+    height: 71px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    color: black;
+}
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgDiv {
+    width: 0px;
+    height: 78px;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.bgDiv:hover {
+    width: 70%;
+    height: 78px;
+    background-color: white;
+}
+
+
+#sublist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 67px;
+    right: 30px;
+    width: 31%;
+    height: 155px;
+    list-style: none;
+    overflow: hidden;
+    display: none;
+    z-index: 1;
+}
+
+.sli {
+    width: 100%;
+    position: relative;
+    right: 5px;
+    height: 25px;
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.sli:hover {
+    background-color: gray;
+    color: black;
+}
+
+#dropdown:hover #sublist {
+    display: block;
+    animation: sublistAnimation 0.5s;
+
+}
+.togglebar{
+    display: none;
+}
+.togglebar i{
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    font-size: 28px;
+    padding: 8px;
+    margin-bottom: 2px;
+    border: 0.5px solid rgb(172, 139, 139);
+    
+}
+@keyframes sublistAnimation {
+    from {
+        transform: translateY(30px);
+    }
+
+    to {
+        transform: translate(0px);
+    }
+}
+
+
+.header {
+    width: 100%;
+    height: 50vh;
+    overflow:  hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.5);
+    position: relative;
+}
+.innerHeader{
+    position:absolute;
+    top: 155px;
+    width: 68%;
+    height: 150px;
+    color: white;
+}
+.innerHeader h1{
+    font-size: 50px;
+}
+.innerHeader p{
+    margin-top: 40px;
+}
+
+
+/*------------------- About new section ---------------- */
+.aboutNewOuter{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutNewInner{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutInnerBlockSection{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.aboutInnerBlocks{
+    width: 25%;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutInnerBlocks:hover{
+    box-shadow: 0 0 0pt 3pt #51CFED !important;
+    transition: 0.5s;
+}
+#aboutHead {
+    text-align: center;
+    text-transform: uppercase;
+    color: #51CFED;
+    font-size: 26px;
+}
+.aboutpara{
+    padding-top: 22px;
+    padding-bottom: 22px;
+    text-align: left;
+    color: rgb(128 125 125);
+    font-size: 13px;
+}
+.aboutInnerBlocks i{
+    font-size: 40px;
+    color: #51CFED;
+    padding-bottom: 20px;
+}
+.pa{
+    color: rgb(128 125 125);
+    font-size: 13px;
+    text-align: center;
+}
+.btn{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btns {
+    width: 12%;
+    height: 47px;
+    margin: 3px;
+    font-size: 15px;
+    background-color: aqua;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+.btns a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* --------------------our feature secttion-------------- */
+.ourFeatureOuterContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ourFeatureInnerContainer {
+    width: 84%;
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.ourFeatureData {
+    width: 72%;
+    height: 71vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ourFeatureData h1 {
+    text-align: left;
+    text-transform: uppercase;
+    color: #51CFED;
+    font-size: 26px;
+}
+
+.featureblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featureMiniBlock {
+    color: rgb(128 125 125);
+    line-height: 22px;
+    font-size: 13px;
+    margin-left: 18px;
+}
+
+.featureMiniBlock .featureminiHead {
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+
+.featureblock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featureblock i {
+    font-size: 40px;
+    margin-bottom: 45px;
+    color: #51CFED;
+}
+
+.ourFeatureImg {
+    width: 97%;
+    height: 71vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.ourFeatureImg img {
+    width: 100%;
+    height: 100vh;
+}
+
+#mainhead {
+    color: black;
+}
+
+.pricingplanOuter {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricingplanInner {
+    width: 66%;
+    height: 56vh;
+}
+
+.pricingplanHead {
+    height: 97px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pricingplanData {
+    height: 44vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.pricebplanBlocks {
+    width: 32%;
+    height: 44vh;
+    box-shadow: 0 0 300px #c9f0f9;
+}
+
+.pricebplanBlocks:hover .pricebplanBlock1 {
+    background-color: #51CFED;
+}
+
+.pricebplanBlocks:hover .pricebplanBlock1 h1 {
+    color: white;
+}
+
+.pricebplanBlocks:hover .pricebplanBlock1 span {
+    color: white;
+}
+
+.pricebplanBlocks:hover .pricebplanBlock1 p {
+    color: white;
+}
+
+.pricebplanBlock1 {
+    height: 93px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.pricebplanBlock1 p {
+    color: #51CFED;
+    font-weight: bold;
+    padding-top: 17px;
+}
+
+.pricebplanBlock1 h1 {
+    padding-bottom: 5px;
+}
+
+.pricebplanBlock1 span {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+.pricebplanBlock2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 32vh;
+}
+
+.pricebplanBlock2Data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20vh;
+    margin-bottom: 15px;
+}
+
+.pricedata {
+    display: flex;
+}
+
+.pricedata i {
+    margin-left: 20px;
+    font-size: 13px;
+    padding-top: 4px;
+    color: green;
+}
+
+.pricedata p {
+    padding-left: 12px;
+    font-size: 13px;
+    color: rgb(128 125 125);
+}
+
+.pricebplanBlock2Button {
+    display: flex;
+    justify-content: center;
+    height: 34px;
+    align-items: center;
+}
+
+.innerbtn {
+    width: 33%;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.innerbtn button {
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    transform: translateX(-106px);
+    background-color: #51CFED;
+    transition: transform 0.5s;
+}
+
+.pricebplanBlocks:hover button {
+    transform: translateX(0px);
+    color: white;
+}
+/* --------------team section --------- */
+.teamOuterSection {
+    width: 100%;
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerSection {
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamHead {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 86%;
+    height: 16%;
+}
+
+.teamHead #heading {
+    margin-top: 10px;
+}
+
+.teamData {
+    width: 86%;
+    height: 84%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.teamblocks {
+    width: 22%;
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid #fff;
+    box-shadow: 0 0 300px #c9f0f9;
+}
+
+.teamblocks:hover .teamimg img {
+    transform: scale(1.3);
+}
+
+.teamblocks:hover .teamSocialMediaData {
+    transform: translateX(0);
+}
+
+.teamimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88%;
+    height: 54%;
+    overflow: hidden;
+    background-color: red;
+}
+
+.teamimg img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    /* margin-bottom: 6px; */
+}
+
+.teamInnerdata {
+    text-align: center;
+}
+
+.teamInnerdata h3 {
+    font-size: 15px;
+}
+
+.teamInnerdata p {
+    font-size: 13px;
+    color: rgb(128 125 125);
+    padding-top: 2px;
+}
+
+.teamSocialMedia {
+    width: 43%;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.teamSocialMediaData {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #51CFED;
+    transform: translateX(-97px);
+    transition: all 0.5s;
+}
+
+.teamSocialMediaData i {
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+}
+
+/* --------------footer section------- */
+
+.footerOuterSections {
+    width: 100%;
+    background: linear-gradient(rgba(7, 78, 96, .5), rgba(32, 165, 197, .5));
+    background-size: cover;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.innerFooter {
+    width: 89vw;
+    height: 47vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.datassInner {
+    width: 70vw;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.blockOfFooter {
+    width: 268px;
+    height: 200px;
+    /* background-color: red; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blockOfFooter .para {
+    padding-left: 20px;
+}
+
+.blockOfFooter h4 {
+    font-size: 20px;
+}
+
+.blockOfFooter p {
+    font-size: 13.5px;
+    transition: all 0.5s;
+}
+
+.endFooter {
+    width: 70vw;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+    color: white;
+}
+
+.endFooter a {
+    color: white;
+}
+
+.anchores {
+    width: 100%;
+    display: flex;
+    padding-bottom: 12px;
+}
+
+.anchores a {
+    text-decoration: none;
+    color: white;
+    /* padding-bottom: 5px; */
+}
+
+.logos {
+    width: 27px;
+    height: 27px;
+    border-radius: 100%;
+    border: 1px solid white;
+    margin: 2px;
+    transition: all 0.5s;
+}
+
+.logos:hover {
+    background-color: white;
+    color: #51CFED;
+}
+
+.logos i {
+    font-size: 12px;
+}
+
+.blockOfFooter span {
+    color: white;
+    font-weight: bold;
+}
+
+.Newsbutton {
+    display: flex;
+    /* background-color: #51CFED; */
+    border: 3.5px solid #51CFED;
+
+}
+
+.Newsbutton input {
+    height: 48px;
+    width: 74%;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+}
+
+.Newsbutton button {
+    width: 26%;
+    height: 48px;
+    background-color: #51CFED;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.paras {
+    margin-left: 20px;
+    margin-bottom: 68px;
+}
+
+.datassInner span {
+    color: white;
+    transition: all 0.5s;
+}
+
+.datassInner p:hover {
+    letter-spacing: 0.8px;
+    color: #51CFED;
+}
